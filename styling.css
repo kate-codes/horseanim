@@ -1,0 +1,21 @@
+/* © 2025 Kaitlyn Sprague. All rights reserved. */
+
+svg { 
+  width: 20%; 
+  height: auto;
+  max-height: 100vh;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+@keyframes frameTransform {
+  100% { transform: translateX(-480px); }
+}
+#spritesheet {
+  animation: frameTransform 1000ms steps(8) infinite;
+}
+
+html, body { height: 100%; }
+body { background: #333; }
